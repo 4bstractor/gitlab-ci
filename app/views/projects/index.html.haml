@@ -5,7 +5,7 @@
     .title
       = link_to project do
         %strong= project.name
-    .alert{class: project_statuc_class(project) }
+    .alert{class: project_status_class(project) }
       - if last_build
         #{last_build.status} (#{build_link(last_build)})
         .right

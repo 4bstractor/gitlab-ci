@@ -1,5 +1,5 @@
 module ProjectsHelper
-  def project_statuc_class(project)
+  def project_status_class(project)
     if project.last_build.try :success?
       'alert-success'
     elsif project.last_build.try :failed?
